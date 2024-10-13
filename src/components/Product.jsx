@@ -29,7 +29,7 @@ function Product() {
         }
 
         const cards = products.map((product) => (
-           <div key={product.id} className="col-md-3" style={{marginBottom: "20px"}}>
+          <div key={product.id} className="col-md-3" style={{marginBottom: "20px"}}>
             <Card   className="h-100">
                 <div className="img" style={{textAlign: "center"}}>
                 <Card.Img variant="top" src={product.images[0]} style={{width: "150px", height: "150px", objectFit: "cover", aspectRatio: "1/1"}} />
@@ -46,7 +46,7 @@ function Product() {
                 <Button variant="primary" onClick={() => addToCart(product)}>Add to Cart</Button>
                 </Card.Footer>
             </Card>
-           </div>
+          </div>
         ))
 
   return (
